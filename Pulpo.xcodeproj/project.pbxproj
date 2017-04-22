@@ -8,13 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		A0145F321EAA5E6B00F73D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145F311EAA5E6B00F73D72 /* AppDelegate.swift */; };
-		A0145F341EAA5E6B00F73D72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145F331EAA5E6B00F73D72 /* ViewController.swift */; };
-		A0145F371EAA5E6B00F73D72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0145F351EAA5E6B00F73D72 /* Main.storyboard */; };
 		A0145F3A1EAA5E6B00F73D72 /* Pulpo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0145F381EAA5E6B00F73D72 /* Pulpo.xcdatamodeld */; };
 		A0145F3C1EAA5E6B00F73D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0145F3B1EAA5E6B00F73D72 /* Assets.xcassets */; };
 		A0145F3F1EAA5E6B00F73D72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0145F3D1EAA5E6B00F73D72 /* LaunchScreen.storyboard */; };
 		A0145F4A1EAA5E6B00F73D72 /* PulpoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145F491EAA5E6B00F73D72 /* PulpoTests.swift */; };
 		A0145F551EAA5E6C00F73D72 /* PulpoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145F541EAA5E6C00F73D72 /* PulpoUITests.swift */; };
+		A0145F631EAA5F2A00F73D72 /* MapaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145F621EAA5F2A00F73D72 /* MapaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +36,6 @@
 /* Begin PBXFileReference section */
 		A0145F2E1EAA5E6B00F73D72 /* Pulpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0145F311EAA5E6B00F73D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A0145F331EAA5E6B00F73D72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A0145F361EAA5E6B00F73D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0145F391EAA5E6B00F73D72 /* Pulpo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pulpo.xcdatamodel; sourceTree = "<group>"; };
 		A0145F3B1EAA5E6B00F73D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0145F3E1EAA5E6B00F73D72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +46,7 @@
 		A0145F501EAA5E6C00F73D72 /* PulpoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PulpoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0145F541EAA5E6C00F73D72 /* PulpoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulpoUITests.swift; sourceTree = "<group>"; };
 		A0145F561EAA5E6C00F73D72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0145F621EAA5F2A00F73D72 /* MapaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				A0145F311EAA5E6B00F73D72 /* AppDelegate.swift */,
-				A0145F331EAA5E6B00F73D72 /* ViewController.swift */,
-				A0145F351EAA5E6B00F73D72 /* Main.storyboard */,
 				A0145F3B1EAA5E6B00F73D72 /* Assets.xcassets */,
 				A0145F3D1EAA5E6B00F73D72 /* LaunchScreen.storyboard */,
 				A0145F401EAA5E6B00F73D72 /* Info.plist */,
 				A0145F381EAA5E6B00F73D72 /* Pulpo.xcdatamodeld */,
+				A0145F621EAA5F2A00F73D72 /* MapaController.swift */,
 			);
 			path = Pulpo;
 			sourceTree = "<group>";
@@ -196,13 +193,16 @@
 				TargetAttributes = {
 					A0145F2D1EAA5E6B00F73D72 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 					};
 					A0145F441EAA5E6B00F73D72 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 						TestTargetID = A0145F2D1EAA5E6B00F73D72;
 					};
 					A0145F4F1EAA5E6C00F73D72 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0830;
 						TestTargetID = A0145F2D1EAA5E6B00F73D72;
 					};
 				};
@@ -234,7 +234,6 @@
 			files = (
 				A0145F3F1EAA5E6B00F73D72 /* LaunchScreen.storyboard in Resources */,
 				A0145F3C1EAA5E6B00F73D72 /* Assets.xcassets in Resources */,
-				A0145F371EAA5E6B00F73D72 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0145F341EAA5E6B00F73D72 /* ViewController.swift in Sources */,
 				A0145F321EAA5E6B00F73D72 /* AppDelegate.swift in Sources */,
 				A0145F3A1EAA5E6B00F73D72 /* Pulpo.xcdatamodeld in Sources */,
+				A0145F631EAA5F2A00F73D72 /* MapaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A0145F351EAA5E6B00F73D72 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A0145F361EAA5E6B00F73D72 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A0145F3D1EAA5E6B00F73D72 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -409,6 +400,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = landaverde.Pulpo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -420,6 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = landaverde.Pulpo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -431,6 +424,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = landaverde.PulpoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pulpo.app/Pulpo";
 			};
 			name = Debug;
@@ -443,6 +437,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = landaverde.PulpoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pulpo.app/Pulpo";
 			};
 			name = Release;
@@ -454,6 +449,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = landaverde.PulpoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Pulpo;
 			};
 			name = Debug;
@@ -465,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = landaverde.PulpoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Pulpo;
 			};
 			name = Release;
@@ -488,6 +485,7 @@
 				A0145F5B1EAA5E6C00F73D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0145F5C1EAA5E6C00F73D72 /* Build configuration list for PBXNativeTarget "PulpoTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +494,7 @@
 				A0145F5E1EAA5E6C00F73D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0145F5F1EAA5E6C00F73D72 /* Build configuration list for PBXNativeTarget "PulpoUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +503,7 @@
 				A0145F611EAA5E6C00F73D72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

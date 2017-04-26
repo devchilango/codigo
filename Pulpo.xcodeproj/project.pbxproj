@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31B25A901EAD28FC00965124 /* Definiciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B25A8F1EAD28FC00965124 /* Definiciones.swift */; };
 		A0145F321EAA5E6B00F73D72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0145F311EAA5E6B00F73D72 /* AppDelegate.swift */; };
 		A0145F3A1EAA5E6B00F73D72 /* Pulpo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A0145F381EAA5E6B00F73D72 /* Pulpo.xcdatamodeld */; };
 		A0145F3C1EAA5E6B00F73D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0145F3B1EAA5E6B00F73D72 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31B25A8F1EAD28FC00965124 /* Definiciones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Definiciones.swift; sourceTree = "<group>"; };
 		A0145F2E1EAA5E6B00F73D72 /* Pulpo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulpo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0145F311EAA5E6B00F73D72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0145F391EAA5E6B00F73D72 /* Pulpo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pulpo.xcdatamodel; sourceTree = "<group>"; };
@@ -74,6 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31B25A8D1EAD28AC00965124 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				31B25A8F1EAD28FC00965124 /* Definiciones.swift */,
+			);
+			name = Struct;
+			sourceTree = "<group>";
+		};
+		31B25A8E1EAD28D300965124 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A0145F621EAA5F2A00F73D72 /* MapaController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		A0145F251EAA5E6B00F73D72 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +115,13 @@
 		A0145F301EAA5E6B00F73D72 /* Pulpo */ = {
 			isa = PBXGroup;
 			children = (
+				31B25A8E1EAD28D300965124 /* Controller */,
+				31B25A8D1EAD28AC00965124 /* Struct */,
 				A0145F311EAA5E6B00F73D72 /* AppDelegate.swift */,
 				A0145F3B1EAA5E6B00F73D72 /* Assets.xcassets */,
 				A0145F3D1EAA5E6B00F73D72 /* LaunchScreen.storyboard */,
 				A0145F401EAA5E6B00F73D72 /* Info.plist */,
 				A0145F381EAA5E6B00F73D72 /* Pulpo.xcdatamodeld */,
-				A0145F621EAA5F2A00F73D72 /* MapaController.swift */,
 			);
 			path = Pulpo;
 			sourceTree = "<group>";
@@ -194,6 +213,11 @@
 					A0145F2D1EAA5E6B00F73D72 = {
 						CreatedOnToolsVersion = 7.3;
 						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 					A0145F441EAA5E6B00F73D72 = {
 						CreatedOnToolsVersion = 7.3;
@@ -259,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0145F321EAA5E6B00F73D72 /* AppDelegate.swift in Sources */,
+				31B25A901EAD28FC00965124 /* Definiciones.swift in Sources */,
 				A0145F3A1EAA5E6B00F73D72 /* Pulpo.xcdatamodeld in Sources */,
 				A0145F631EAA5F2A00F73D72 /* MapaController.swift in Sources */,
 			);

@@ -10,43 +10,25 @@ import UIKit
 import CoreData
 import CoreLocation
 
-extension AppDelegate: CLLocationManagerDelegate {
-        
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        if region is CLCircularRegion {
-            handleEvent(forRegion: region)
-        }
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        if region is CLCircularRegion {
-            handleEvent(forRegion: region)
-        }
-    }
-}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let locationManager = CLLocationManager()
-    let mapa = MapaController()
     
-    func handleEvent(forRegion region: CLRegion!) {
-        print("Geofence triggered!")
-    }
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow()
         window?.frame = UIScreen.main.bounds
         
-        
+        let mapa = MapaController()
+        mapa.locationManager.requestAlwaysAuthorization()
         window?.rootViewController = mapa
         window?.makeKeyAndVisible()
         
-        locationManager.delegate = self
-        locationManager.requestAlwaysAuthorization()
+        
+        let notificationSettings = UIUserNotificationSettings(types: [.alert, .sound, .badge], categories: nil)
+        application.registerUserNotificationSettings( notificationSettings )
         
         return true
     }
